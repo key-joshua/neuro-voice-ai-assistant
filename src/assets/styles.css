@@ -1,0 +1,234 @@
+.container {
+  padding: 0 50px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4169e1 0%, #9370db 100%);
+}
+
+header {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-menu {
+    gap: 32px;
+    display: flex;
+  }
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.main-content {
+  display: flex;
+  padding: 48px 0;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.content-left {
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .content-left {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+
+p {
+  font-size: 18px;
+  max-width: 400px;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.learn-more {
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 12px 32px;
+  border-radius: 50px;
+  background-color: #305de4;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #3e5eb5;
+}
+
+.phone-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .phone-container {
+    width: 50%;
+  }
+}
+
+.phone-mockup {
+  width: 280px;
+  height: 560px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 48px;
+  border: 4px solid #333;
+  background-color: black;
+}
+
+.phone-screen {
+  inset: 0;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+
+.mic-button {
+  border: none;
+  padding: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #4169e1;
+  transition: background-color 0.3s ease;
+}
+
+.mic-button:hover {
+  background-color: #3154b3;
+}
+
+.mic-button.listening {
+  background-color: #b33131;
+}
+
+.mic-svg-icon {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+.mic-icon {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}
+
+.voice-viz {
+  gap: 4px;
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.viz-bar {
+  width: 4px;
+  background-color: #4169e1;
+  animation: pulse 1s infinite;
+}
+
+.viz-bar:nth-child(1) {
+  height: 20px;
+  animation-delay: 0s;
+}
+.viz-bar:nth-child(2) {
+  height: 16px;
+  animation-delay: 0.1s;
+}
+.viz-bar:nth-child(3) {
+  height: 28px;
+  animation-delay: 0.2s;
+}
+.viz-bar:nth-child(4) {
+  height: 22px;
+  animation-delay: 0.3s;
+}
+.viz-bar:nth-child(5) {
+  height: 18px;
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+}
+
+.thinking-text {
+  padding: 0 16px;
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.wave-svg {
+    left: 0;
+    width: 100%;
+    height: 80px;
+    bottom: 20px;
+    position: absolute;
+    color: rgba(65, 105, 225, 0.3);
+}
+  
