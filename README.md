@@ -1,6 +1,6 @@
 # Neuro-vOICE-ai_Assistant
 
-1. Clone the repository: ```git clone git@github.com:key-joshua/Rihlatech-Frontend.git```
+1. Clone the repository: ```git clone git@github.com:key-joshua/neuro-voice-ai-assistant.git```
 2. Node Version ```v22.12.0```.
 3. Setup Database:
 
